@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Rainfall Analysis in India</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|emboss|neon|outline-effect">
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <!--Animation -->
+  <style>
+    .anima{
+	color:navy;
+	animation-name:example;
+	animation-duration:4s;
+	animation-delay:2s;
+	animation-iteration-count:infinite;
+}
+@keyframes example{
+0%{color:red;}
+25%{color:#00BFFF;}
+50%{color:#800080;}
+75%{color:#FF00FF;}
+100%{color:green;}
+}
+</style>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <br>
+        <br>
+        <marquee width="500px" direction="right" height="100px">
+        <h1 class="font-effect-fire" style="font-family:Sofia;font-size:50px;"><a href="index.html">SmartBridge Project</a></h1>
+        </marquee>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Dashboard</a></li>
+          <li><a class="nav-link scrollto" href="#services">Seasons</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Story</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate_animated animate_fadeInDown">Analysis Of<span> Rainfall In India</span></h2>
+          <p class="animate_animated fanimate_adeInUp">Rainfall analysis in India involves studying historical data from meteorological stations to examine patterns, trends, and variations in precipitation across regions and time periods. This includes calculating averages, anomalies, and trends to understand deviations from the mean rainfall. Spatial distribution analysis helps identify areas with higher or lower rainfall and factors influencing these patterns. Exploring the relationship between rainfall and climatic factors aids in understanding drivers and potential impacts. This analysis is essential for sectors like agriculture, water management, disaster preparedness, and policy decisions for climate resilience.</p>
+          <a href="#about" class="btn-get-started animate_animated animate_fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate_animated animate_fadeInDown">Rainfall DataSet</h2>
+          <p class="animate_animated animate_fadeInUp">Using the Kaggle dataset in Tableau, the analysis of India's rainfall from 1901 to 2015 provided new insights into the evolution of precipitation patterns. It was easy to see trends in annual rainfall, seasonal changes, geographical variances, and severe events like droughts or years with unusually high rainfall by visualising the data. The analysis helped people better comprehend India's weather trends by providing a thorough picture of the country's history of rainfall.</p>
+          <a href="#about" class="btn-get-started animate_animated animate_fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate_animated animate_fadeInDown">Software Tools Used</h2>
+          <p class="animate_animated animate_fadeInUp"><ol type="I" style="color:white;font-size: 14px;text-align: left;" >
+            <li>Tableau Desktop</li>
+            <li>Tableau Public Server</li>
+            <li>Bootstrap</li>
+            <li>Flask</li>
+           </ol></p>
+          <a href="#about" class="btn-get-started animate_animated animate_fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+  </section><!-- End Hero -->
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>About</h2>
+          <p>Dashboard</p>
+        </div>
+        <div class='tableauPlaceholder' id='viz1688005988051' style='position: relative'>
+          <noscript>
+            <a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project-Dashboard_16880059402750&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+             <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Project-Dashboard_16880059402750&#47;Dashboard1' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project-Dashboard_16880059402750&#47;Dashboard1&#47;1.png' /> 
+              <param name='animate_transition' value='yes' />
+              <param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' />
+              <param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' />
+              <param name='language' value='en-GB' />
+              <param name='filter' value='publish=yes' />
+          </object>
+        </div>                
+        <script type='text/javascript'>                   
+          var divElement = document.getElementById('viz1688005988051');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          if ( divElement.offsetWidth > 800 ) 
+          { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+          else if ( divElement.offsetWidth > 500 ) 
+          { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';}
+          else { vizElement.style.width='100%';vizElement.style.height='1027px';}
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement); 
+        </script>                 
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">TableauDesktop</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Bootstrap</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Flask</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Advantages Disadvantages</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Tableau Desktop</h3>
+                <p class="fst-italic">
+                  Tableau Desktop is a robust data visualization and analysis tool designed for individuals and organizations to create interactive and visually appealing visualizations. It provides a user-friendly interface that allows users to connect to various data sources, transform raw data, and build insightful visualizations without the need for complex coding. With Tableau Desktop, users can create charts, graphs, maps, and dashboards, apply filters and calculations, and perform advanced analytics on their data. It offers a wide range of features and functionalities to explore and present data in a meaningful way. Tableau Desktop is typically used by analysts and data professionals to develop visualizations and gain insights from data.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Powerful data visualization and analysis tool.
+                  </li>
+                  <li><i class="ri-check-double-line"></i>User-friendly interface for creating interactive visualizations.</li>
+                  <li><i class="ri-check-double-line"></i>Connects to various data sources and transforms raw data.
+                  </li>
+                </ul>
+                <p>
+                  Offers a wide range of visualization options (charts, graphs, maps, etc.).
+                  Allows for data exploration, filtering, and advanced statistical analysis.
+                  Supports the creation of interactive dashboards.
+                  Used by analysts and data professionals for data visualization and analysis
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-1.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Bootstrap</h3>
+                <p class="fst-italic">
+                  Bootstrap is an open-source front-end framework that provides a collection of tools, templates, and pre-designed components to facilitate the development of responsive and mobile-friendly websites and web applications. It incorporates HTML, CSS, and JavaScript to offer a standardized and efficient approach to web design and development. Bootstrap simplifies the process of creating visually appealing and consistent web interfaces by providing a grid system for layout structuring, a set of customizable UI components, and a responsive design philosophy that ensures optimal display across different devices and screen sizes. It has gained significant popularity due to its ease of use, flexibility, and extensive community support.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Bootstrap is a popular front-end framework for building responsive and mobile-first websites.</li>
+                  <li><i class="ri-check-double-line"></i>Bootstrap offers a responsive grid system that allows for easy layout structuring and adaptation to different screen sizes.</li>
+                  <li><i class="ri-check-double-line"></i>It includes a wide range of pre-designed UI components like buttons, forms, navigation bars, cards, modals, and more, which can be easily customized and integrated into websites.</li>
+                </ul>
+                <p>
+                  Bootstrap utilizes CSS classes and predefined styles to achieve consistent and visually appealing designs across different browsers and devices.
+                  The framework is highly customizable, allowing developers to modify colors, fonts, spacing, and other design aspects to match their specific needs.
+                  Bootstrap includes JavaScript plugins that enhance interactivity and functionality, such as carousels, dropdowns, tooltips, and modals.
+                  It offers a responsive typography system that ensures optimal readability and legibility on different devices.
+                  Bootstrap has excellent documentation and a large community support, providing resources, templates, and examples for developers.
+                  It is widely adopted and used by developers to streamline and accelerate the web development process.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-2.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Flask</h3>
+                <p class="fst-italic">
+                  Flask is a lightweight and flexible web framework written in Python. It provides a simple and elegant way to build web applications and APIs. Flask follows a "micro" framework approach, focusing on simplicity and extensibility. It offers features such as URL routing, template rendering using Jinja2, and a modular design philosophy that allows developers to add or remove components as needed. Flask is known for its ease of use, minimalistic nature, and extensive ecosystem of extensions, making it a popular choice for developers looking to create web applications with Python.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Lightweight and versatile web framework written in Python.</li>
+                  <li><i class="ri-check-double-line"></i>Follows a "micro" framework approach, providing essential tools for web development.</li>
+                  <li><i class="ri-check-double-line"></i>Routing and URL mapping for defining routes and handling different HTTP methods. </li>
+                </ul>
+                <p>
+                  Includes a built-in templating engine called Jinja2 for dynamic content rendering.
+                  Modular design philosophy allows flexibility in project structure and organization.
+                  Vast ecosystem of Flask extensions for additional functionalities and integrations.
+                  Suitable for small to medium-sized applications, with scalability for complex requirements.
+                  Active community providing resources, tutorials, and community-driven support.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Advantages Disadvantages</h3>
+                <p class="fst-italic">
+                  Agriculture Planning: Analysis of rainfall patterns helps in understanding the distribution and variability of rainfall across different regions in India. This information is crucial for agricultural planning, including crop selection, irrigation management, and resource allocation.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Water Resource Management: Rainfall analysis aids in assessing the availability and distribution of water resources in various parts of the country. It helps in planning water storage, hydroelectric power generation, and efficient water allocation for domestic, industrial, and agricultural purposes.</li>
+                  <li><i class="ri-check-double-line"></i> Drought and Flood Management: By analyzing rainfall data, authorities can identify regions prone to drought or excessive rainfall, facilitating early warning systems and disaster preparedness. This information can aid in implementing appropriate measures to mitigate the impact of droughts and floods, such as water conservation strategies, crop diversification, and infrastructure planning.</li>
+                  <li><i class="ri-check-double-line"></i>  Climate Change Studies: Rainfall analysis contributes to studying long-term climatic trends and understanding the impacts of climate change. It helps in identifying shifts in rainfall patterns, intensity, and seasonality, providing valuable insights for climate modeling and adaptation strategies.</li>
+                </ul>
+                <p>
+                  Data Accuracy and Availability: Rainfall data collection and accuracy can vary across different regions in India. Some areas may have limited or unreliable data, hindering comprehensive analysis and accurate decision-making.
+                  Spatial and Temporal Resolution: The spatial and temporal resolution of rainfall data can impact the accuracy of analysis. Fine-grained analysis requires higher-resolution data, which may not always be available uniformly across the country.
+                  Lack of Integration with Other Factors: Isolating rainfall analysis without considering other factors like temperature, humidity, or land use can limit the understanding of the complex interactions influencing agriculture, hydrology, and ecosystems.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="static/assets/img/features-4.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="row" data-aos="zoom-out">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p>A comprehensive and in-depth study is needed to better understand the long-term rainfall trends, patterns, and changes in India from 1905 to 2015. This is the call to action for rainfall analysis in India. Regional impacts, climate variability, and monsoon dynamics should all be included in this research. In order to lessen the effects of rainfall variability on India's economy and society, we can develop effective water resource management strategies, implement targeted agricultural practises, and improve our ability to predict and adapt to future climate changes.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Call To Action</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Cta Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Seasons</h2>
+          <p></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left">
+              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">Spring</a></h4>
+              <p class="description">Spring is a season of rejuvenation and renewal.It marks the transition from winter to summer.During spring, temperatures gradually rise, and nature comes alive</p>   
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">Summer</a></h4>
+              <p class="description">Summer is a season of warmth and sunshine.It brings longer days and opportunities for outdoor activities.People often enjoy vacations, beaches, and relaxation during this time.</p>            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">Monsoon</a></h4>
+              <p class="description">Monsoon season is characterized by heavy rainfall.It usually occurs in tropical and subtropical regions.The rains provide relief from the heat and help support agricultural activities.</p>            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Autumn</a></h4>
+              <p class="description">Autumn, also known as fall, is a season of colorful transformation.Leaves change their colors, temperatures cool down, and nature prepares for the arrival of winter.</p>            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="">Pre-winter</a></h4>
+              <p class="description">Pre-winter is the transitional season between autumn and winter.It features cooler temperatures and hints of winter's arrival, with foliage changes and occasional chilly weather.</p>            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
+              <h4 class="title"><a href="">Winter</a></h4>
+              <p class="description">Winter is the coldest season of the year.It is often associated with snow, cold temperatures, and cozy indoor activities.</p>            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Story</h2>
+          <p>What we've done</p>
+        </div>
+        <div class='tableauPlaceholder' id='viz1688020841851' style='position: relative'>
+          <noscript>
+            <a href='#'><img alt='Rainfall Analysis Story In India ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project-Story_16880207712050&#47;Story1&#47;1_rss.png' style='border: none' /></a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+             <param name='embed_code_version' value='3' /> 
+             <param name='path' value='views&#47;Project-Story_16880207712050&#47;Story1?:language=en-GB&amp;:embed=true&amp;publish=yes' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project-Story_16880207712050&#47;Story1&#47;1.png' />
+               <param name='animate_transition' value='yes' />
+               <param name='display_static_image' value='yes' />
+               <param name='display_spinner' value='yes' />
+               <param name='display_overlay' value='yes' />
+               <param name='display_count' value='yes' />
+               <param name='language' value='en-GB' />
+               <param name='filter' value='publish=yes' />
+          </object>
+        </div>                
+        <script type='text/javascript'> 
+          var divElement = document.getElementById('viz1688020841851');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+          var scriptElement = document.createElement('script');  
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);    
+          </script>
+      </div>
+    </section><!-- End Portfolio Section -->
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+        <ul class="faq-list">
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is the overall trend of rainfall in India from 1901 to 2015?
+          <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The overall trend of rainfall in India from 1901 to 2015 shows considerable variability. 
+                There are periods of above-average and below-average rainfall, indicating a fluctuating pattern rather than a consistent trend.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Are there any significant changes or variations in the rainfall patterns over this period?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Yes, there are significant changes and variations in rainfall patterns over this period.
+                Some regions experienced consistent increases or decreases in rainfall, while others showed more irregular patterns with alternating wet and dry years.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">How does the rainfall analysis from 1901 to 2015 compare to recent years or decades?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                To provide a comparison with recent years or decades, I would need more up-to-date data beyond my knowledge cutoff in September 2021. 
+                However, it is important to note that climate change and global warming can impact rainfall patterns, and recent years have witnessed.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What are the seasonal rainfall patterns in different parts of India during this period?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Seasonal rainfall patterns in India vary across different regions.
+                 Generally, India experiences a distinct summer monsoon season (June-September) characterized by widespread rainfall, especially in the central and northern parts. 
+                 However, regions like Tamil Nadu and northeastern states receive significant rainfall during the winter monsoon season (October-December) as well.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Can the rainfall data be used to predict future climate patterns in India?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Rainfall data, along with other climatic variables and models, can be used to develop projections and predictions of future climate patterns in India.
+                However, the accuracy of these predictions depends on various factors and uncertainties associated with climate modeling.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">How reliable is the rainfall data collected and recorded from 1901 to 2015?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The reliability of rainfall data collected and recorded from 1901 to 2015 depends on the quality of data collection methods, observation stations, and data preservation practices. 
+                Efforts are made to ensure data accuracy, but there can be limitations and uncertainties associated with historical records.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section><!-- End F.A.Q Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Team Number 237</h2>
+          <p>Our Hardworking Team</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <p class="font-effect-emboss" style="font-family:'Times New Roman';color:#808080"> Ankitha Reddy is a motivated student who is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering (CSE) at the Vellore Institute of Technology (VIT). 
+                  </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>V ANKITHA</h4>
+                <span>Team Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <p class="font-effect-emboss" style="font-family:'Times New Roman';color:#808080">Jitendra is a motivated student who is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering (CSE) at the Vellore Institute of Technology (VIT). </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>U JITENDRA</h4>
+                <span>Team Member</span>
+              </div>
+            </div>
+          </div>
+<!--, , -->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <p class="font-effect-emboss" style="font-family:'Times New Roman';color:#808080">Vignesh is a motivated student who is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering (CSE) at the Vellore Institute of Technology (VIT).  </p>
+                  <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>SR VIGNESH</h4>
+                <span>Team Member</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <p class="font-effect-emboss" style="font-family:'Times New Roman';color:#808080">Prajith is a motivated student who is pursuing a Bachelor of Technology (B. Tech) in Computer Science and Engineering (CSE) at the Vellore Institute of Technology (VIT).</p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>DLVP PRAJITH</h4>
+                <span>Team Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Team Section -->
+<!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Vellore Institute Of Technology,Vellore-632014,TN,India</p>
+              </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>vanchaankitha.reddy2020@vitstudent.ac.in<br>unna.jitendra2020@vitstudent.ac.in<br>vignesh.sr2020@vitstudent.ac.in<br>prajith.dlvp2020@vitstudent.ac.in</p>
+              </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 8096396303<br>+91 9494564107<br>+91 9177314713</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 class="anima">TEAM-237</h3>
+      <p>The analysis of rainfall in India emphasizes the importance of understanding and adapting to the country's diverse and changing precipitation patterns for sustainable development.</p>      <div class="social-links">
+        <a href="https://twitter.com/vit_univ" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/VITuniversity/" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/vellore_vit/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.youtube.com/c/VITUniversityVellore" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="https://www.linkedin.com/school/vellore-institute-of-technology/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>TEAM-237</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Designed by <a href="#team">TEAM-237</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+</body>
+</html>
